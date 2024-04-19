@@ -1,15 +1,14 @@
-<div style="text-align: center; margin-top: 100px;">
-    <h2>Login</h2>
-    <form>
-      <div>
-        <label for="adharNumber">AdharCard Number:</label>
-        <input type="text" id="adharNumber" name="adharNumber" required>
-      </div>
-      <div>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <button type="submit">Login</button>
-    </form>
-  </div>
-  
+<div class="login-container">
+  <h2>Login</h2>
+  <form (ngSubmit)="login(adharNumber.value, password.value)">
+    <div class="form-field">
+      <label for="adharNumber">AdharCard Number:</label>
+      <input type="text" id="adharNumber" name="adharNumber" required #adharNumber>
+    </div>
+    <div class="form-field">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required #password>
+    </div>
+    <button type="submit" class="login-button">Login</button>
+  </form>
+</div>

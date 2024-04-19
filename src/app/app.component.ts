@@ -13,4 +13,8 @@ export class AppComponent {
     // Redirect to the signup page
     this.router.navigate(['/signup']);
   }
+  redirectToLogin(): void {
+    // Redirect to the login page
+    this.router.navigate(['/login']);
+  }
 }

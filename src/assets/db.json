@@ -17,6 +17,15 @@
       "adharNumber": "245767898991",
       "phone": "7004537842",
       "password": "sum"
+    },
+    {
+      "id": "7dbb",
+      "name": "Thankyou Pati",
+      "state": "Odisha",
+      "pincode": "751030",
+      "adharNumber": "245767898992",
+      "phone": "8004537843",
+      "password": "thankyou"
     }
   ]
 }
