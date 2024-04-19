@@ -1,0 +1,46 @@
+<form *ngIf="formGroup" [formGroup]="formGroup" (ngSubmit)="submitForm()" class="form-container">
+
+  <!-- Personal Information -->
+  <div class="form-field">
+    <label for="name">Name:</label>
+    <input type="text" id="name" formControlName="name" placeholder="Name">
+    <div *ngIf="formGroup.get('name')" class="error-message">Name is required</div>
+  </div>
+
+  <div class="form-field">
+    <label for="state">State:</label>
+    <input type="text" id="state" formControlName="state" placeholder="State">
+  </div>
+
+  <div class="form-field">
+    <label for="pincode">Pincode:</label>
+    <input type="text" id="pincode" formControlName="pincode" placeholder="Pincode">
+  </div>
+
+  <!-- Contact Information -->
+  <div class="form-field">
+    <label for="adharNumber">Aadhar Number:</label>
+    <input type="text" id="adharNumber" formControlName="adharNumber" placeholder="Aadhar Number">
+    <div *ngIf="formGroup.get('adharNumber')" class="error-message">Invalid Aadhar Number</div>
+  </div>
+
+  <div class="form-field">
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" formControlName="phone" placeholder="Phone Number">
+    <div *ngIf="formGroup.get('phone')" class="error-message">Invalid Phone Number</div>
+  </div>
+
+  <!-- Password -->
+  <div class="form-field">
+    <label for="password">Password:</label>
+    <input type="password" id="password" formControlName="password" placeholder="Password">
+    <div *ngIf="formGroup.get('password')" class="error-message">Password is required</div>
+  </div>
+
+  <!-- Progress Indicator -->
+  <mat-progress-bar mode="determinate" [value]="calculateProgress()" class="progress-bar"></mat-progress-bar>
+
+  <!-- Submit Button -->
+  <button type="submit" mat-raised-button color="primary" [disabled]="formGroup.invalid" class="submit-button">Submit</button>
+
+</form>

@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "c251",
+      "name": "Smriti Choudhary",
+      "state": "Jharkhand",
+      "pincode": "831004",
+      "adharNumber": "245767898990",
+      "phone": "7004537843",
+      "password": "smt"
+    },
+    {
+      "id": "d4bf",
+      "name": "Sudiksha Sharma",
+      "state": "Jharkhand",
+      "pincode": "831004",
+      "adharNumber": "245767898991",
+      "phone": "7004537842",
+      "password": "sum"
+    }
+  ]
+}
