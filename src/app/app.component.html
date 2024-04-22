@@ -1,5 +1,9 @@
-<div style="text-align: center; margin-top: 100px;">
-  <button (click)="redirectToSignup()">Signup</button>
-  <button (click)="redirectToLogin()">Login</button>
+<app-header></app-header>
+<div style="text-align: center; margin-top: 2px;">
+  
+  <!-- <button (click)="redirectToSignup()">Signup</button>-->
+  
   <router-outlet></router-outlet>
+  <button class="font-semibold text-xl p-6" (click)="redirectToLogin()">Already existing user ? Login</button>
 </div>
+<app-footer><app-footer>

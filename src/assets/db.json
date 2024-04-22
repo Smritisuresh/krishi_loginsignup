@@ -26,6 +26,15 @@
       "adharNumber": "245767898992",
       "phone": "8004537843",
       "password": "thankyou"
+    },
+    {
+      "id": "558b",
+      "name": "Sumit Dash",
+      "state": "orrisa",
+      "pincode": "751020",
+      "adharNumber": "123456789012",
+      "phone": "9861770516",
+      "password": "sumit1234"
     }
   ]
 }

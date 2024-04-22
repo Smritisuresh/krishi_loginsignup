@@ -14,19 +14,24 @@ import { MatButtonModule } from '@angular/material/button';
 import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 // Define your routes
 const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'login', component: LoginComponent },
-  { path: '', redirectTo: '/signup', pathMatch: 'full' } // Redirect to signup page by default
+  { path: '', redirectTo: '/signup', pathMatch: 'full' },
+   // Redirect to signup page by default
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

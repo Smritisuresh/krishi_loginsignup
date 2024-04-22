@@ -32,4 +32,14 @@
   button[type="submit"]:hover {
     background-color: #0056b3;
   }
-  
+  .submit-button {
+    background-color: #25312d; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 4px; /* Button border radius */
+    padding: 14px 0; /* Increased button padding */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s; /* Button background color transition */
+    margin-top: 20px; /* Added margin */
+    font-weight: 800;
+}

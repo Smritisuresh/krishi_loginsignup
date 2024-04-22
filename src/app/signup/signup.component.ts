@@ -47,4 +47,5 @@ export class SignupComponent implements OnInit {
     const filled = Object.values(this.formGroup.controls).filter(control => control.valid).length;
     return (filled / total) * 100;
   }
+  
 }
